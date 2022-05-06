@@ -214,7 +214,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                       <a href={venue.mapUrl}>
                         <img
                           style={{ borderRadius: 5 }}
-                          src="/assets/images/oval-hotel-map-horizontal.png"
+                          src="/assets/images/naitandmap2.png"
                           alt="oval hotel map"
                         />
                       </a>
@@ -387,15 +387,15 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
             <small>
               <a
                 style={{ color: 'grey' }}
-                href="https://github.com/wzulfikar/nextjs-wedding-invite"
+                href="https://www.instagram.com/dilip__kr/"
               >
-                Built with&nbsp;
+                Built For&nbsp;
                 <object
                   style={{ height: '0.5rem' }}
                   data="/assets/images/heart.svg"
                   type="image/svg+xml"
                 ></object>
-                &nbsp;using NextJS
+                &nbsp;Brother
               </a>
             </small>
           </div>
