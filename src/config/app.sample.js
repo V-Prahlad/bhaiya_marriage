@@ -15,15 +15,15 @@ const baseConfig = {
   },
   venue: {
     name: 'Naitand',
-    addressLine1: 'Naitand,Post - Baddiha',
-    addressLine2: 'Jamua,',
+    addressLine1: 'Naitand, Post - Baddiha, Police Station - Hirodih',
+    addressLine2: 'Block - Jamua, District - Giridih',
     city: 'Giridih',
     country: 'India',
     mapUrl: 'https://goo.gl/maps/dScLgiowcitzzHpMA',
   },
   logo: {
-    headerLogo: '/assets/images/ring-svg.png',
-    footerLogo: '/assets/images/ring-svg.png',
+    headerLogo: '/assets/images/swastika.png',
+    footerLogo: '/assets/images/ganesh.png',
     footerLogoType: 'png',
   },
   ogTags: {

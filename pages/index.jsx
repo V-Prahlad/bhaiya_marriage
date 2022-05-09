@@ -73,6 +73,15 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
     endTime: calendarInfo.timeEndISO,
   };
 
+  const daysLeft = () => {
+    const countDownDate = new Date('Jun 22, 2022 00:00:00').getTime();
+    const now = new Date().getTime();
+    const daysLeft = countDownDate - now;
+    const days = Math.floor(daysLeft / (1000 * 60 * 60 * 24));
+    return days;
+  };
+  console.log(daysLeft());
+
   return (
     <div>
       <style jsx global>
@@ -140,6 +149,24 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                           style={{ animationDelay: '1s' }}
                         >
                           {venue.name}, {venue.city}, {venue.country}.
+                        </span>
+                      </div>
+                      <div
+                        style={{
+                          display: 'flex',
+                          justifyContent: 'center',
+                          marginTop: '20px',
+                        }}
+                      >
+                        <span
+                          style={{
+                            border: '1px solid white',
+                            padding: '1px 7px',
+                            backgroundColor: '#ffffff',
+                            color: '#a13535',
+                          }}
+                        >
+                          {daysLeft()} Days Left
                         </span>
                       </div>
                     </div>
@@ -363,14 +390,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
         <div className="container">
           <div className="footer_widget pt-50 pb-10 text-center">
             <div className="footer_logo">
-              {logo.footerLogo &&
-                (logo.footerLogoType === 'mp4' ? (
-                  <video height="140" autoPlay muted loop>
-                    <source src={logo.footerLogo} type="video/mp4" />
-                  </video>
-                ) : (
-                  <img src={logo.footerLogo} />
-                ))}
+              <img style={{ width: '30vw' }} src={logo.footerLogo} />
             </div>
             <div className="footer_title">
               <h3 className="title">{coupleName}</h3>
@@ -385,17 +405,14 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
             }}
           >
             <small>
-              <a
-                style={{ color: 'grey' }}
-                href="https://www.instagram.com/dilip__kr/"
-              >
-                Built For&nbsp;
+              <a style={{ color: 'grey' }} href="https://github.com/V-Prahlad">
+                &nbsp;
                 <object
                   style={{ height: '0.5rem' }}
                   data="/assets/images/heart.svg"
                   type="image/svg+xml"
                 ></object>
-                &nbsp;Brother
+                &nbsp;
               </a>
             </small>
           </div>
