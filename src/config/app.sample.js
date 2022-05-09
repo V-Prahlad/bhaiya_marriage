@@ -1,5 +1,5 @@
 const baseConfig = {
-  weddingDay: 'Friday',
+  weddingDay: 'Wednesday',
   weddingTime: '19.00 - 21.00',
   weddingDate: 'June 22, 2022',
   showBuiltWithInfo: true,
@@ -18,8 +18,11 @@ const baseConfig = {
     addressLine1: 'Naitand, Post - Baddiha, Police Station - Hirodih',
     addressLine2: 'Block - Jamua, District - Giridih',
     city: 'Giridih',
-    country: 'India',
+    state: 'Jharkhand',
     mapUrl: 'https://goo.gl/maps/dScLgiowcitzzHpMA',
+  },
+  audio: {
+    audio: '/assets/audio/audio.mp3',
   },
   logo: {
     headerLogo: '/assets/images/swastika.png',
@@ -35,7 +38,7 @@ const baseConfig = {
 
 const lang = {
   id: {
-    weddingDay: 'Thursday',
+    weddingDay: 'Wednesday',
     weddingDate: '22 July 2022',
     venue: {
       ...baseConfig.venue,

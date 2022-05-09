@@ -1,9 +1,7 @@
 import AddToCalendar from 'react-add-to-calendar';
 import QRCode from 'qrcode.react';
-import useSWR from 'swr';
 
 import Head from '@src/components/Head';
-import guessList from './guest_list.json';
 
 import resolvePath from '@src/utils/resolvePath';
 import appConfig from '@src/config/app.sample.js';
@@ -35,6 +33,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
     weddingDate,
     weddingTime,
     calendarInfo,
+    audio,
   } = translateConfig(appConfig, guest.locale);
   const { brideName, groomName, coupleNameFormat } = coupleInfo;
 
@@ -68,7 +67,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
   const calendarEvent = {
     title: eventTitle,
     description: eventDescription,
-    location: `${venue.city}, ${venue.country}`,
+    location: `${venue.city}, ${venue.state}`,
     startTime: calendarInfo.timeStartISO,
     endTime: calendarInfo.timeEndISO,
   };
@@ -148,7 +147,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                           data-delay="1s"
                           style={{ animationDelay: '1s' }}
                         >
-                          {venue.name}, {venue.city}, {venue.country}.
+                          {venue.name}, {venue.city}, {venue.state}.
                         </span>
                       </div>
                       <div
@@ -352,7 +351,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                     <br />
                     {venue.addressLine2}
                     <br />
-                    {venue.country}.
+                    {venue.state}.
                   </p>
                   <p className="text" style={{ marginTop: 10 }}>
                     <b>
@@ -406,13 +405,13 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
           >
             <small>
               <a style={{ color: 'grey' }} href="https://github.com/V-Prahlad">
-                &nbsp;
+                With&nbsp;
                 <object
                   style={{ height: '0.5rem' }}
                   data="/assets/images/heart.svg"
                   type="image/svg+xml"
                 ></object>
-                &nbsp;
+                &nbsp;V. Prahlad
               </a>
             </small>
           </div>

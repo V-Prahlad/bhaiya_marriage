@@ -1,3 +1,4 @@
 .next
 now.*.json
 node_modules
+public/assets/audio/audio.mp3
