@@ -399,8 +399,9 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
         {appConfig.showBuiltWithInfo && (
           <div
             style={{
-              textAlign: 'center',
-              marginBottom: 40,
+              display: 'flex',
+              margin: '30px 0 5px 0 ',
+              justifyContent: 'center',
             }}
           >
             <small>
