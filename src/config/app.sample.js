@@ -31,7 +31,7 @@ const baseConfig = {
   },
   ogTags: {
     logo: '/assets/images/aw-ring-logo.png',
-    siteName: 'wedding.wzulfikar.com',
+    siteName: 'manju-dilip.life',
     publishedTime: '2020-01-25',
   },
 };
