@@ -3,7 +3,7 @@ import QRCode from 'qrcode.react';
 
 import Head from '@src/components/Head';
 import ReactAudioPlayer from 'react-audio-player';
-import audio from '../public/assets/Audio/audio.mp3';
+// import audio from '../public/assets/Audio/audio.mp3';
 
 import resolvePath from '@src/utils/resolvePath';
 import appConfig from '@src/config/app.sample.js';
@@ -169,9 +169,9 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                           {daysLeft()} Days Left
                         </span>
                       </div>
-                      <div>
+                      {/* <div>
                         <ReactAudioPlayer src={audio} autoPlay controls />
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
