@@ -20,6 +20,7 @@ const baseConfig = {
     city: 'Giridih',
     state: 'Jharkhand',
     mapUrl: 'https://goo.gl/maps/dScLgiowcitzzHpMA',
+    mapIcon: '/assets/images/map.gif',
   },
   audio: {
     audio: '/assets/audio/audio.mp3',

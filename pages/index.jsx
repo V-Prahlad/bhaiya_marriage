@@ -169,9 +169,6 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                           {daysLeft()} Days Left
                         </span>
                       </div>
-                      {/* <div>
-                        <ReactAudioPlayer src={audio} autoPlay controls />
-                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -257,7 +254,11 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                           marginTop: 10,
                         }}
                       >
-                        {venue.mapUrl}
+                        <img
+                          style={{ width: '180px', height: '90px' }}
+                          src={venue.mapIcon}
+                          alt=""
+                        />
                       </a>
                     </div>
                   </div>
