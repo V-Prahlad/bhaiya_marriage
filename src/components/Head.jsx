@@ -9,7 +9,6 @@ export default ({ title, description, url, logo, author, siteName, publishedTime
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content={siteName} />
-      <meta property="og:url" content={url} />
       <meta property="og:image" content={logo} />
       {publishedTime && <meta property="article:published_time" content={publishedTime} />}
       <meta property="article:modified_time" content={modifiedTime} />
