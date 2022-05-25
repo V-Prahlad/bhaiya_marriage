@@ -4879,14 +4879,7 @@
   optionalDependencies:
     "moment" "^2.18.1"
 
-"react-audio-player@^0.17.0":
-  "integrity" "sha512-aCZgusPxA9HK7rLZcTdhTbBH9l6do9vn3NorgoDZRxRxJlOy9uZWzPaKjd7QdcuP2vXpxGA/61JMnnOEY7NXeA=="
-  "resolved" "https://registry.npmjs.org/react-audio-player/-/react-audio-player-0.17.0.tgz"
-  "version" "0.17.0"
-  dependencies:
-    "prop-types" "^15.7.2"
-
-"react-dom@^15.5.4 || ^16.0.0", "react-dom@^16.12.0", "react-dom@^16.6.0", "react-dom@>=16", "react-dom@~16":
+"react-dom@^15.5.4 || ^16.0.0", "react-dom@^16.12.0", "react-dom@^16.6.0", "react-dom@~16":
   "integrity" "sha512-LMxFfAGrcS3kETtQaCkTKjMiifahaMySFDn71fZUNpPHZQEzmk/GiAeIT8JSOrHB23fnuCOMruL2a8NYlw+8Gw=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-16.12.0.tgz"
   "version" "16.12.0"
@@ -4915,7 +4908,7 @@
     "prop-types" "^15.7.2"
     "webrtc-adapter" "^7.2.1"
 
-"react@^15.5.3 || ^16.0.0", "react@^15.5.4 || ^16.0.0", "react@^16.0.0", "react@^16.11.0", "react@^16.12.0", "react@^16.6.0", "react@^16.8.0", "react@>=16", "react@~16", "react@15.x.x || 16.x.x":
+"react@^15.5.3 || ^16.0.0", "react@^15.5.4 || ^16.0.0", "react@^16.0.0", "react@^16.11.0", "react@^16.12.0", "react@^16.6.0", "react@^16.8.0", "react@~16", "react@15.x.x || 16.x.x":
   "integrity" "sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.12.0.tgz"
   "version" "16.12.0"
