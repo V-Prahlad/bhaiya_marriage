@@ -398,27 +398,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
               <h3 className="title">{coupleName}</h3>
             </div>
           </div>
-        </div>
-        {appConfig.showBuiltWithInfo && (
-          <div
-            style={{
-              display: "flex",
-              margin: "30px 0 5px 0 ",
-              justifyContent: "center",
-            }}
-          >
-            <small>
-              <a style={{ color: "grey" }} href="https://github.com/V-Prahlad">
-                With&nbsp;
-                <object
-                  style={{ height: "0.5rem" }}
-                  data="/assets/images/heart.svg"
-                  type="image/svg+xml"
-                ></object>
-                &nbsp;V. Prahlad
-              </a>
-            </small>
-          </div>
+       
         )}
       </footer>
     </div>
