@@ -78,7 +78,6 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
     const days = Math.floor(daysLeft / (1000 * 60 * 60 * 24));
     return days;
   };
-  console.log(daysLeft());
 
   return (
     <div>
