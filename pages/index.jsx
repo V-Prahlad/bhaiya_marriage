@@ -398,7 +398,15 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
               <h3 className="title">{coupleName}</h3>
             </div>
           </div>
-       
+        </div>
+        {appConfig.showBuiltWithInfo && (
+          <div
+            style={{
+              display: "flex",
+              margin: "30px 0 5px 0 ",
+              justifyContent: "center",
+            }}
+          ></div>
         )}
       </footer>
     </div>
