@@ -388,6 +388,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
             data-wow-duration='1.3s'
             data-wow-delay='0.4s'
             style={{
+              padding: "0",
               paddingBottom: 30,
               boxShadow: "none",
               visibility: "visible",
