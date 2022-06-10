@@ -101,48 +101,48 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
         logo={resolvePath(ogTags.logo)}
         author={resolvePath("/")}
       />
-      <section className="header_area">
-        <div id="home" className="header_slider">
-          <div className="slick-list draggable">
-            <div className="slick-track" style={{ opacity: 1 }}>
+      <section className='header_area'>
+        <div id='home' className='header_slider'>
+          <div className='slick-list draggable'>
+            <div className='slick-track' style={{ opacity: 1 }}>
               <div
-                className="single_slider bg_cover d-flex align-items-center"
+                className='single_slider bg_cover d-flex align-items-center'
                 style={{
                   height: "100vh",
                 }}
               >
-                <div className="container">
-                  <div className="row justify-content-center">
-                    <div className="col-lg-12">
+                <div className='container'>
+                  <div className='row justify-content-center'>
+                    <div className='col-lg-12'>
                       <div
-                        className="slider_content text-center"
+                        className='slider_content text-center'
                         style={{ paddingTop: 0 }}
                       >
                         <img
                           style={{ maxHeight: 60, margin: 25, marginTop: 0 }}
                           src={logo.headerLogo}
-                          alt="logo"
+                          alt='logo'
                         />
                         <h5
-                          className="slider_sub_title"
-                          data-animation="fadeInUp"
-                          data-delay="0.2s"
+                          className='slider_sub_title'
+                          data-animation='fadeInUp'
+                          data-delay='0.2s'
                           style={{ animationDelay: "0.2s" }}
                         >
                           {t("siteIntro")}
                         </h5>
                         <h2
-                          className="slider_title"
-                          data-animation="fadeInUp"
-                          data-delay="0.7s"
+                          className='slider_title'
+                          data-animation='fadeInUp'
+                          data-delay='0.7s'
                           style={{ animationDelay: "0.7s" }}
                         >
                           {coupleName}
                         </h2>
                         <span
-                          className="location"
-                          data-animation="fadeInUp"
-                          data-delay="1s"
+                          className='location'
+                          data-animation='fadeInUp'
+                          data-delay='1s'
                           style={{ animationDelay: "1s" }}
                         >
                           {venue.name}, {venue.city}, {venue.state}.
@@ -175,17 +175,17 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
         </div>
       </section>
 
-      <section id="coming_soon" className="coming_soon_area pt-20 pb-70">
-        <div className="coming_soon_shape_1" style={{ zIndex: 1 }}>
-          <img src="/assets/images/shape-1.png" alt="shape" />
+      <section id='coming_soon' className='coming_soon_area pt-20 pb-70'>
+        <div className='coming_soon_shape_1' style={{ zIndex: 1 }}>
+          <img src='/assets/images/shape-1.png' alt='shape' />
         </div>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-4">
+        <div className='container'>
+          <div className='row align-items-center'>
+            <div className='col-lg-4'>
               <div
-                className="section_title pt-50 wow fadeIn"
-                data-wow-duration="1.3s"
-                data-wow-delay="0.2s"
+                className='section_title pt-50 wow fadeIn'
+                data-wow-duration='1.3s'
+                data-wow-delay='0.2s'
                 style={{
                   visibility: "visible",
                   animationDuration: "1.3s",
@@ -193,7 +193,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                   animationName: "fadeIn",
                 }}
               >
-                <h3 className="title">{t("eventDate")}:</h3>
+                <h3 className='title'>{t("eventDate")}:</h3>
                 <p>{weddingDateBrief}</p>
                 <div
                   style={{
@@ -206,14 +206,14 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                     buttonLabel={t("btnAddToMyCalendar")}
                   />
                 </div>
-                <img src="/assets/images/section_shape.png" alt="Shape" />
+                <img src='/assets/images/section_shape.png' alt='Shape' />
               </div>
             </div>
-            <div className="col-lg-8">
+            <div className='col-lg-8'>
               <div
-                className="wow fadeIn"
-                data-wow-duration="1.3s"
-                data-wow-delay="0.6s"
+                className='wow fadeIn'
+                data-wow-duration='1.3s'
+                data-wow-delay='0.6s'
                 style={{
                   visibility: "visible",
                   animationDuration: "1.3s",
@@ -221,7 +221,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                   animationName: "fadeIn",
                 }}
               >
-                <div className="coming_soon_count d-flex justify-content-end pt-20">
+                <div className='coming_soon_count d-flex justify-content-end pt-20'>
                   <div
                     style={{
                       marginRight: 20,
@@ -229,17 +229,17 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                       height: 138,
                       backgroundColor: "transparent",
                     }}
-                    className="single_count d-flex align-items-center justify-content-center mt-30"
+                    className='single_count d-flex align-items-center justify-content-center mt-30'
                   >
                     <div
-                      className="count_content"
+                      className='count_content'
                       style={{ zIndex: 1, paddingTop: 20 }}
                     >
                       <a href={venue.mapUrl}>
                         <img
                           style={{ borderRadius: 5 }}
-                          src="/assets/images/naitandmap2.png"
-                          alt="oval hotel map"
+                          src='/assets/images/naitandmap2.png'
+                          alt='oval hotel map'
                         />
                       </a>
                       <a
@@ -254,7 +254,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                         <img
                           style={{ width: "180px", height: "90px" }}
                           src={venue.mapIcon}
-                          alt=""
+                          alt=''
                         />
                       </a>
                     </div>
@@ -264,17 +264,17 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
             </div>
           </div>
         </div>
-        <div className="coming_soon_shape_2">
-          <img src="/assets/images/shape-2.png" alt="shape" />
+        <div className='coming_soon_shape_2'>
+          <img src='/assets/images/shape-2.png' alt='shape' />
         </div>
       </section>
 
-      <section id="contact" className="contact_area">
-        <div className="container">
+      <section id='contact' className='contact_area'>
+        <div className='container'>
           <div
-            className="contact_wrapper wow fadeInUpBig"
-            data-wow-duration="1.3s"
-            data-wow-delay="0.4s"
+            className='contact_wrapper wow fadeInUpBig'
+            data-wow-duration='1.3s'
+            data-wow-delay='0.4s'
             style={{
               paddingBottom: 30,
               boxShadow: "none",
@@ -284,9 +284,9 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
               animationName: "fadeInUp",
             }}
           >
-            <div className="row justify-content-center">
-              <div className="col-lg-9">
-                <div className="section_title text-center pb-30">
+            <div className='row justify-content-center'>
+              <div className='col-lg-9'>
+                <div className='section_title text-center pb-30'>
                   {guest.name && (
                     <div
                       style={{
@@ -300,7 +300,7 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                       <p style={{ fontSize: "1.5rem" }}>{guest.name},</p>
                     </div>
                   )}
-                  <h3 className="title">{t("invitationIntro")}</h3>
+                  <h3 className='title'>{t("invitationIntro")}</h3>
                   <div
                     style={{
                       textAlign: "left",
@@ -338,16 +338,16 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                     </div>
                   )}
 
-                  <p className="text">
-                    <a
-                      href={venue.mapUrl}
+                  <p className='text'>
+                    <span
                       style={{
-                        borderBottom: "0.2rem solid",
-                        marginBottom: 10,
+                        fontSize: "20px",
+                        color: "#d59a56",
+                        paddingBottom: "10px",
                       }}
                     >
-                      <b>{venue.name}</b>
-                    </a>
+                      From
+                    </span>
                     <br />
                     {venue.addressLine1}
                     <br />
@@ -355,16 +355,75 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                     <br />
                     {venue.state}.
                   </p>
-                  <p className="text" style={{ marginTop: 10 }}>
-                    <b>
-                      {weddingDate} · {weddingTime}
-                    </b>
+                  <p className='text' style={{ marginTop: 10 }}>
+                    <b>{weddingDate}</b>
                   </p>
 
                   {t("invitationClosing") &&
                     !t("invitationClosing").startsWith("[missing") && (
                       <p
-                        className="text"
+                        className='text'
+                        style={{
+                          fontStyle: "italic",
+                          maxWidth: 420,
+                          margin: "auto",
+                          marginTop: 60,
+                        }}
+                        dangerouslySetInnerHTML={{
+                          __html: t("invitationClosing"),
+                        }}
+                      ></p>
+                    )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='contact' className='contact_area'>
+        <div className='container'>
+          <div
+            className='contact_wrapper wow fadeInUpBig'
+            data-wow-duration='1.3s'
+            data-wow-delay='0.4s'
+            style={{
+              paddingBottom: 30,
+              boxShadow: "none",
+              visibility: "visible",
+              animationDuration: "1.3s",
+              animationDelay: "0.4s",
+              animationName: "fadeInUp",
+            }}
+          >
+            <div className='row justify-content-center'>
+              <div className='col-lg-9'>
+                <div className='section_title text-center pb-30'>
+                  <p className='text'>
+                    <span
+                      style={{
+                        fontSize: "20px",
+                        color: "#d59a56",
+                        paddingBottom: "10px",
+                      }}
+                    >
+                      To
+                    </span>
+                    <br />
+                    FakiraPahri, Post - Sabalpur, Police Station - Sariya
+                    <br />
+                    Block - Sariya, District - Giridih
+                    <br />
+                    {venue.state}.
+                  </p>
+                  <p className='text' style={{ marginTop: 10 }}>
+                    <b>{weddingDate}</b>
+                  </p>
+
+                  {t("invitationClosing") &&
+                    !t("invitationClosing").startsWith("[missing") && (
+                      <p
+                        className='text'
                         style={{
                           fontStyle: "italic",
                           maxWidth: 420,
@@ -384,17 +443,17 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
       </section>
 
       {/* Footer section */}
-      <footer id="footer" className="footer_area">
-        <div className="footer_shape_1">
-          <img src="/assets/images/shape-1.png" alt="shape" />
+      <footer id='footer' className='footer_area'>
+        <div className='footer_shape_1'>
+          <img src='/assets/images/shape-1.png' alt='shape' />
         </div>
-        <div className="container">
-          <div className="footer_widget pt-50 pb-10 text-center">
-            <div className="footer_logo">
+        <div className='container'>
+          <div className='footer_widget pt-50 pb-10 text-center'>
+            <div className='footer_logo'>
               <img style={{ width: "30vw" }} src={logo.footerLogo} />
             </div>
-            <div className="footer_title">
-              <h3 className="title">{coupleName}</h3>
+            <div className='footer_title'>
+              <h3 className='title'>{coupleName}</h3>
             </div>
           </div>
         </div>
