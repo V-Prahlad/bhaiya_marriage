@@ -71,14 +71,6 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
     endTime: calendarInfo.timeEndISO,
   };
 
-//   const daysLeft = () => {
-//     const countDownDate = new Date("Jun 22, 2022 00:00:00").getTime();
-//     const now = new Date().getTime();
-//     const daysLeft = countDownDate - now;
-//     const days = Math.floor(daysLeft / (1000 * 60 * 60 * 24));
-//     return days;
-//   };
-
   return (
     <div>
       <style jsx global>
@@ -148,24 +140,6 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                           {venue.name}, {venue.city}, {venue.state}.
                         </span>
                       </div>
-//                       <div
-//                         style={{
-//                           display: "flex",
-//                           justifyContent: "center",
-//                           marginTop: "20px",
-//                         }}
-//                       >
-//                         <span
-//                           style={{
-//                             border: "1px solid white",
-//                             padding: "1px 7px",
-//                             backgroundColor: "#ffffff",
-//                             color: "#a13535",
-//                           }}
-//                         >
-//                           {daysLeft()} Days Left
-//                         </span>
-//                       </div>
                     </div>
                   </div>
                 </div>
