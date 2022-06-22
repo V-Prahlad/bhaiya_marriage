@@ -139,7 +139,6 @@ const ShowInvite = ({ currentUrl, guestListLastUpdatedAt, guest }) => {
                         >
                           {venue.name}, {venue.city}, {venue.state}.
                         </span>
-                        <div></div>
                       </div>
                     </div>
                   </div>
